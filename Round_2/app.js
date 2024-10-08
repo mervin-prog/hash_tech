@@ -8,13 +8,13 @@ let v_phoneCollection = 'Hash-8377';
 // Execution
 async function execute(){
 
-  await createCollection(v_nameCollection);
-  await createCollection(v_phoneCollection);
+  //await createCollection(v_nameCollection);
+  //await createCollection(v_phoneCollection);
 
   await getEmpCount(v_nameCollection);
 
-  await indexData(v_nameCollection, 'Department');
-  await indexData(v_phoneCollection, 'Gender');
+  // await indexData(v_nameCollection, 'Department');
+  // await indexData(v_phoneCollection, 'Gender');
 
   await delEmpByEmployeeId(v_nameCollection, 'E02003'); 
   await getEmpCount(v_nameCollection);
