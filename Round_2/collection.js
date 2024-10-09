@@ -13,8 +13,6 @@ async function createCollection(collectionName) {
   }
 }
 
-
-
 async function delEmpByEmployeeId(collectionName, employeeId) {
   const lowerCaseCollectionName = collectionName.toLowerCase();
   try {

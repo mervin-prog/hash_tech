@@ -6,13 +6,13 @@ string rotateString(string org_str,int k){
     k=k%n;
 
     string res="";
-    for(int i=k; i<n; i++)
+    for(int i=k; i<n-1; i++)
     res+=org_str[i];
 
     for(int i=0; i<k; i++)
     res+=org_str[i];
-
-    return res;
+    
+    return res+org_str[n-1];
 }
 
 int main(){
